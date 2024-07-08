@@ -22,4 +22,5 @@ public class Student {
     @Column(columnDefinition = "TEXT")
     private String description;
     private Date createdDate;
+    private String password;
 }
