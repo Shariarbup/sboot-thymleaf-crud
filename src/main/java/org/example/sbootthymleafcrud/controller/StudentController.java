@@ -62,6 +62,6 @@ public class StudentController {
     @PostMapping("/students/new")
     public String addStudent(@ModelAttribute Student student) {
         studentService.saveStudent(student);
-        return "redirect:/students/";
+        return "redirect:/students";
     }
 }

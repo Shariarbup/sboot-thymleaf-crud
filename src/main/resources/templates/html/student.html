@@ -25,12 +25,12 @@
         </thead>
         <tbody>
         <tr th:each="student : ${studentList}">
-            <td th:text="${student.id}">1</td>
-            <td th:text="${student.name}">John Doe</td>
-            <td th:text="${student.email}">johndoe@example.com</td>
-            <td th:text="${student.address}">123 Main St</td>
-            <td th:text="${student.description}">Lorem ipsum dolor sit amet.</td>
-            <td th:text="${#dates.format(student.createdDate, 'yyyy-MM-dd')}">2023-07-07</td>
+            <td th:text="${student.id}"></td>
+            <td th:text="${student.name}"></td>
+            <td th:text="${student.email}"></td>
+            <td th:text="${student.address}"></td>
+            <td th:text="${student.description}"></td>
+            <td th:text="${#dates.format(student.createdDate, 'yyyy-MM-dd')}"></td>
             <td>
                 <a th:href="@{/students/edit/{id}(id=${student.id})}" class="btn btn-primary">Edit</a>
                 <a th:href="@{/students/delete/{id}(id=${student.id})}" class="btn btn-danger">Delete</a>
